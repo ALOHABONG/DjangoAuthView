@@ -1,8 +1,11 @@
 # DjangoAuthView
 
-## from django.contrib.auth import views as auth_views test
+Django Simple Project
+* Basic study for Django Framework
+* djangogirls test 
+* django.contrib.auth.views test
 
-**djangogirls + django.contrib.auth.views**
+**url pattern**
 
 * ^login/$ [name='login']
 * ^logout/$ [name='logout']
@@ -13,6 +16,5 @@
 * ^reset/done/$ [name='password_reset_complete']
 
 
-## Reference
-[link](https://tutorial.djangogirls.org/ko/) djangogirls tutorial
-
+## Documentation
+Detailed documentation about djangogirsl tutorial [link](https://tutorial.djangogirls.org/ko/)
