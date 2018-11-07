@@ -1,11 +1,11 @@
 # DjangoAuthView
 
-Django Simple Project
+### Django Simple Project ###
 * Basic study for Django Framework
 * djangogirls test 
 * django.contrib.auth.views test
 
-## url pattern ##
+### url pattern ###
 
 * ^login/$ [name='login']
 * ^logout/$ [name='logout']
