@@ -5,7 +5,7 @@ Django Simple Project
 * djangogirls test 
 * django.contrib.auth.views test
 
-### url pattern ###
+## url pattern ##
 
 * ^login/$ [name='login']
 * ^logout/$ [name='logout']
