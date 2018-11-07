@@ -8,6 +8,10 @@ from django.contrib.auth.models import User
 from django.contrib.auth import login, authenticate
 from django.template import RequestContext
 from django.contrib.auth.decorators import login_required
+from django.views.generic import TemplateView
+from django.views.generic.edit import CreateView
+from django.core.urlresolvers import reverse_lazy 
+from django.contrib.auth.forms import UserCreationForm
 
 def index(request):
     return render(request, 'blog/index.html', {})
@@ -74,3 +78,11 @@ def post_remove(request, pk):
     post = get_object_or_404(Post, pk=pk)
     post.delete()
     return redirect('post_list')
+
+class UserCreateView(CreateView) :
+    template_name = 'blog/signup.html'
+    form_class = UserCreationForm
+    success_url = reverse_lazy('post_list')
+
+class UserCreateDoneTemplateView(TemplateView) :   
+    template_name = 'blog/signup_done.html'

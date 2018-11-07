@@ -1,0 +1,27 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: =?utf-8?b?MTI3LjAuMC4xOjgwMDDsnZgg67mE67CA67KI7Zi4IOyerOyEpOyglQ==?=
+From: webmaster@localhost
+To: chrisjin13@Naver.com
+Date: Wed, 07 Nov 2018 04:14:16 -0000
+Message-ID: <20181107041416.3556.6855@DESKTOP-ENIG17T>
+
+Hi there,
+
+Someone asked for a password reset for the email address chrisjin13@Naver.com. Follow the link below:
+http://127.0.0.1:8000/reset/MQ/513-e3c8797a734c5935247e/
+
+In case you forgot your Django Boards username: admin
+
+If clicking the link above doesn't work, please copy and paste the URL in a new browser window instead.
+
+If you've received this mail in error, it's likely that another user entered your email address by mistake while trying
+to reset a password. If you didn't initiate the request, you don't need to take any further action and can safely
+disregard this email.
+
+Thanks,
+
+The Django Boards Team
+
+-------------------------------------------------------------------------------

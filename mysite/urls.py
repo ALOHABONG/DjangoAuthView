@@ -16,6 +16,7 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from django.contrib.auth import views
+from blog.views import UserCreateView, UserCreateDoneTemplateView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -36,5 +37,7 @@ urlpatterns = [
         views.PasswordResetConfirmView.as_view(template_name='blog/password_reset_confirm.html'), name='password_reset_confirm'),
     url(r'^reset/done/$', views.PasswordResetCompleteView.as_view(template_name='blog/password_reset_complete.html'),
         name='password_reset_complete'),
+    url(r'^register/$', UserCreateView.as_view(), name='register'),
+    url(r'^register/done/$', UserCreateDoneTemplateView.as_view(), name='register_done'),
     url(r'', include('blog.urls')),
 ]

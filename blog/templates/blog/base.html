@@ -17,6 +17,8 @@
         <a href="{% url 'logout' %}" class="top-menu"><span class="glyphicon glyphicon-log-out"></span></a>
         <a href="{% url 'password_change' %}" class="top-menu"><span class="glyphicon glyphicon-cog"></span></a>
         {% else %}
+        <a href="{% url 'password_reset' %}" class="top-menu"><span class="glyphicon glyphicon-repeat"></span></a>
+        <a href="{% url 'register' %}" class="top-menu"><span class="glyphicon glyphicon-user"></span></a>
         <a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
         {% endif %}
 
