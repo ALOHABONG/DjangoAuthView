@@ -26,7 +26,10 @@ urlpatterns = [
     url(r'^password_change/done/$', views.PasswordChangeDoneView.as_view(template_name='blog/password_change_done.html'),
         name='password_change_done'),
     url(r'^password_reset/$', views.PasswordResetView.as_view(
-        template_name='blog/password_reset.html'), name='password_reset'),
+        template_name='blog/password_reset.html',
+        email_template_name='blog/password_reset_email.html'
+        ),
+        name='password_reset'),
     url(r'^password_reset/done/$', views.PasswordResetDoneView.as_view(template_name='blog/password_reset_done.html'),
         name='password_reset_done'),
     url(r'^reset/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$',
